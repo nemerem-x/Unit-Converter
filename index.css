@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Poppins:wght@100;200;400;600;800&display=swap');
+
+body {
+    font-family: 'Meow Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1931;
+}
+
+.container {
+    height: auto;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toparea {
+    height: auto;
+    background-color: #6943FF;
+    border-radius: 20px 20px 0 0;
+}
+
+.toparea h1 {
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#input {
+    display: block;
+    margin: auto;
+    height: 55px;
+    width: 80px;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    background: none;
+    border: 2px solid rgb(208, 215, 246);
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+#input.red {
+    border: 2px solid red;
+    animation: shake 0.5s; 
+}
+
+@keyframes shake {
+    0% { transform: translateX(1px); }
+    10% { transform: translateX(-1px) ; }
+    20% { transform: translateX(-3px); }
+    30% { transform: translateX(3px); }
+    40% { transform: translateX(1px); }
+    50% { transform: translateX(-1px) ; }
+    60% { transform: translateX(-3px); }
+    70% { transform: translateX(3px) ; }
+    80% { transform: translateX(-1px); }
+    90% { transform: translateX(1px); }
+    100% { transform: translateX(1px) ; }
+  }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#convert {
+    background-color: white;
+    border: none;
+    padding: 11px 22px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #5f5f5f;
+    cursor: pointer;
+}
+
+#convert:hover {
+    color: #6943FF;
+}
+
+.bottomarea {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+    background-color: #F4F4F4;
+    border-radius: 0 0 20px 20px;
+}
+
+.length, .volume, .mass {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+    background-color: white;
+}
+
+.length:nth-child(1) {
+    margin-top: 0;
+}
+
+.bottomarea h5 {
+    padding-top: 16px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.bottomarea p {
+    margin: 0;
+    font-size: 12px;
+    padding-bottom: 16px;
+    padding-top: 5px;
+}
